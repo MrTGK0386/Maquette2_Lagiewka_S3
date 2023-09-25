@@ -1,0 +1,117 @@
+body {
+    width: 100%;
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    padding-block: 2em;
+    padding-inline: 0.4em;
+}
+
+.r_header {
+    display: flex;
+    align-content: center;
+}
+.header_button {
+    display: flex;
+    align-content: center;
+    text-decoration: none;
+    position: relative;
+}
+
+.header_button > button {
+    margin: .3em;
+    background: none;
+    border: none;
+    font-family: "Montserrat",monospace;
+    font-size: 15pt;
+    font-weight: normal;
+
+}
+.header_button:hover{
+    overflow: auto;
+    text-shadow: 0 0.02em #7f80b3,0 -0.02em #7f80b3,0.02em 0 #7f80b3,-0.02em 0 #7f80b3;
+    color: #51528f;
+}
+.header_button:hover:after {
+    background-color: #51528f;
+    position: absolute;
+    border-radius: 30px;
+    height: 8px;
+    width: 80%;
+    content:"";
+    top: 90%;
+    left: 10%;
+}
+
+
+.tile {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    font-family: "Montserrat", monospace;
+}
+
+
+.normal {
+    background-color: #fff;
+}
+
+.green {
+    background-color: #f6f6f6;
+}
+
+a {
+    color: #ba568c;
+}
+
+.structure {
+    display: flex;
+    flex-direction: row;
+    justify-content: ;
+}
+
+h1 {
+    font-weight:1000;
+    color: #51528f;
+    font-size: 35pt;
+    margin: .1em;
+}
+h2 {
+    margin: .1em;
+    font-weight: 700;
+    color: #51528f;
+    font-size: 30pt;
+}
+h3 {
+    margin: .1em;
+    font-weight: lighter;
+    font-size: 30pt;
+    color: #51528f;
+}
+
+.button_container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.button_container >button{
+    font-family: "Montserrat", monospace;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border: none;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.36);
+}
+.green > .button_container >button {
+    color: #ba568c;
+}
